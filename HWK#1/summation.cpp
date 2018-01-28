@@ -13,7 +13,7 @@ int main(){
     for (int i = 1; i <= 100; i++){
         LoopSum += i;
     }
-
+    cout << "The answer is: " << LoopSum << endl;
     if (GaussSum == LoopSum){
         cout << "Both summations are the same." << endl;
     }else{

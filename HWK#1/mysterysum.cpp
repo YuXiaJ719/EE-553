@@ -18,8 +18,8 @@ int main(){
         sum2 += 1 / ((n + 1.0f) * (n + 1.0f));
         n++;
     }
-    cout << "After " << n << " loops, two results are the same." << endl;
-    cout <<  sqrtf(6 * sum1) << endl;
+//    cout << "After " << n + 1 << " loops, two results are the same." << endl;
+//    cout <<  sqrtf(6 * sum1) << endl;
 
     float sumForward = 0.0f;
     float sumBackward = 0.0f;

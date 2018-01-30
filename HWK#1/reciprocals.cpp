@@ -10,11 +10,11 @@ int main(){
     float sum1;
     float sum2;
 
-    for (float i = 1; i <= 100.0; i++){
-        sum1 += 1.0f / i;
+    for (float i = 1.0; i <= 100.0; i++){
+        sum1 += 1.0 / i;
     }
-    for (float i = 0; i < 100.0; i++){
-        sum2 +=  1.0f / (100 - i);
+    for (float i = 0.0; i < 100.0; i++){
+        sum2 +=  1.0 / (100.0f - i);
     }
     cout << "###Sum using float type###" << endl;
     cout << "Sum1 is " << sum1 << endl;
@@ -27,7 +27,7 @@ int main(){
     for (double i = 1.0; i <= 100.0; i++){
         sum3 += 1.0 / i;
     }
-    for (double i = 0; i < 100.0; i++){
+    for (double i = 0.0; i < 100.0; i++){
         sum4 += 1.0 / (100 - i);
     }
 

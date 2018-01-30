@@ -1,0 +1,6 @@
+function promotion
+什么时候用inllinefunction？
+	always inline small functions 1-2lines
+	always inline a function that is only called once
+
+read notes on infinite

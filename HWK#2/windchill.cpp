@@ -8,8 +8,8 @@ double cal_windchill(double t, double v){
 }
 
 int main(){
-	cout << "Wind(vertical)";
-	cout << setw(60) << "Temperature(F)(horizontal)\n";
+	cout << "Wind";
+	cout << setw(60) << "Temperature(-45F to 40F)\n";
 	cout << "(mph)";
 	for(int a = 40; a >= -45; a -= 5){
 		if(a == 40)

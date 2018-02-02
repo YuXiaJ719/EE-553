@@ -35,11 +35,10 @@ int main(){
 	cin >> a >> b;
 
 	if(a < b)
-		cout << "The number of prime numbers between " 
-		<< a << " and " << b << ": " << countPrime(a, b) << endl;
+		cout << countPrime(a, b) << endl;
 	else
-		cout << "The number of prime numbers between " 
-		<< b << " and " << a << ": " << countPrime(b, a) << endl;
+		cout << countPrime(b, a) << endl;
+	
 	return 0;
 }
 

@@ -8,9 +8,9 @@ int main(){
 	cin >> p;
 
 	if(isPrime(p))
-		cout << "The input is prime number." << endl;
+		cout << "This number is prime." << endl;
 	else
-		cout << "The input is not prime number." << endl;
+		cout << "The number is not prime." << endl;
 
 	return 0;
 }

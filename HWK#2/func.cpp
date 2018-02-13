@@ -2,6 +2,10 @@
 using namespace std;
 
 double fact(double n){
+
+	if(n <= 1)
+		return 1;
+
 	double prod = 1;
 
 	for(double i = 1; i <= n; i++){
@@ -12,7 +16,7 @@ double fact(double n){
 }
 
 double fact2(double n){
-	if(n == 1)
+	if(n <= 1)
 		return 1;
 	else
 		return n * fact2(n - 1);

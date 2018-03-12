@@ -1,30 +1,15 @@
 #include <iostream>
-#include <cmath>
+#include <string>
 using namespace std;
 
+
 int main() {
-int a[ 10 ]; // a is an array.
-int i,j,t;
-for(i=0;i<10;i++)
-	cin>>a[ i ];
-cout<<endl;
-for(i=0;i<9;i++)
-{
-for(j=i+1;j<10;j++)
-{
-if(a[ i ]<  a[j])
-{
-t=a[ i ];
-a[i]=a[j];
-a[j]=t;
-}
-}
-}
-cout<<"the sorted array is:"<<endl;
-for(i=0;i<10;i++)
-{
-cout<<a[ i ]<<" ";
-}
-cout<<endl;
-return 0;
+	string st("15:17:29");
+	string::size_type sz;
+	double f = stod(st, &sz);
+	st = st.substr(sz + 1);
+	double s = stod(st, &sz);
+	st = st.substr(sz + 1);
+	double t = stod(st, &sz);
+	// cout << s;
 }

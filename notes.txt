@@ -1,0 +1,3 @@
+c++时间&日期<ctime>
+time_t, clock_t, size_t是<ctime>里面表示时间和日期的某种整数
+

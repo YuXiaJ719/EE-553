@@ -91,52 +91,59 @@ void Input(){
         case KEY_LEFT:
         	if(dir == RIGHT)
         		break;
-            else
+            else{
             	dir = LEFT;
             	break;
+            }
         case KEY_RIGHT:
         	if(dir == LEFT)
         		break;
-        	else
+            else{
             	dir = RIGHT;
             	break;
+            }
         case KEY_UP:
         	if(dir == DOWN)
         		break;
-        	else
+            else{
             	dir = UP;
             	break;
+            }
         case KEY_DOWN:
         	if(dir == UP)
         		break;
-        	else
+            else{
             	dir = DOWN;
             	break;
-
+            }
         case 'a':
         	if(dir == RIGHT)
         		break;
-            else
+            else{
             	dir = LEFT;
             	break;
+            }
         case 'd':
         	if(dir == LEFT)
         		break;
-        	else
+            else{
             	dir = RIGHT;
             	break;
+            }
         case 'w':
         	if(dir == DOWN)
         		break;
-        	else
+            else{
             	dir = UP;
             	break;
+            }
         case 's':
         	if(dir == UP)
         		break;
-        	else
+            else{
             	dir = DOWN;
             	break;
+            }
         case 'x':
             gameOver = true;
             break;

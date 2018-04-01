@@ -8,4 +8,4 @@ Matrix.o: Matrix.cpp Matrix.hh
 	g++ -c Matrix.cpp
 
 clean:
-	rm *.o main
+	rm *.o main.exe

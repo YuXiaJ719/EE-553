@@ -5,7 +5,7 @@ using namespace std;
 
 Matrix operator +(Matrix left, Matrix right){
     if(left.rows != right.rows || left.cols != right.cols){
-        cout << "Dimension is not match: " << '(' << left.rows << ',' << left.cols << ')' << ',' << '(' << right.rows << ',' << right.cols << ')';
+        cout << "Dimensions are not matching: " << '(' << left.rows << ',' << left.cols << ')' << ',' << '(' << right.rows << ',' << right.cols << ')';
         return Matrix(0, 0, 0);
     }
     int size = left.rows * right.cols;
@@ -18,7 +18,7 @@ Matrix operator +(Matrix left, Matrix right){
 
 Matrix operator -(Matrix left, Matrix right){
     if(left.rows != right.rows || left.cols != right.cols){
-        cout << "Dimension is not match: " << '(' << left.rows << ',' << left.cols << ')' << ',' << '(' << right.rows << ',' << right.cols << ')';
+        cout << "Dimensions are not matching: " << '(' << left.rows << ',' << left.cols << ')' << ',' << '(' << right.rows << ',' << right.cols << ')';
         return Matrix(0, 0, 0);
     }
         
@@ -60,3 +60,18 @@ double& Matrix::operator ()(int i, int j){
     return mat[i*cols + j];
 }
 
+Matrix& Matrix::operator =(const Matrix& orig){
+    if(this != &orig){
+        delete [] mat;
+        
+        rows = orig.rows;
+        cols = orig.cols;
+        
+        mat = new double[rows*cols];
+        
+        for(int i = 0; i < rows*cols; i++)
+            mat[i] = orig.mat[i];
+    }
+    
+    return *this;
+}

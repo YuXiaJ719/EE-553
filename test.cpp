@@ -109,15 +109,5 @@ bool miller_rabin(int n, int k){
 
 
 int main(){
-//    bool* isPrime = Erathothenes(1000);
-//    cout << isPrime[4] << endl;
-//    delete isPrime;
-    cout << GCD(30, 15) << endl;
-    cout << LCM(30, 15) << endl;
-    cout << Power(2, 10) << endl;
-    cout << Power(2, 9) << endl;
-    cout << PowerMod(2, 10, 2) << endl;
-    cout << PowerMod(2, 10, 7) << endl;
-    cout << fermat(64, 128) << endl;
-    return 0;
+    int a[] = {1, 2, 3, 4};
 }

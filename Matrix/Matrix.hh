@@ -39,6 +39,7 @@ public:
         return *this;
     }
     
+    Matrix(Matrix&& orig);
     friend Matrix operator +(Matrix left, Matrix right);
     friend Matrix operator -(Matrix left, Matrix right);
     friend Matrix operator *(Matrix left, Matrix right);

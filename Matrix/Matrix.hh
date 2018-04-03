@@ -40,10 +40,12 @@ public:
     }
     
     Matrix(Matrix&& orig);
-    friend Matrix operator +(Matrix left, Matrix right);
-    friend Matrix operator -(Matrix left, Matrix right);
-    friend Matrix operator *(Matrix left, Matrix right);
+    Matrix& operator =(const Matrix& orig);
     double& operator ()(int i, int j);
-    friend std::ostream& operator <<(std::ostream& s, Matrix m);
+
+    friend Matrix operator +(const Matrix& left, const Matrix& right);
+    friend Matrix operator -(const Matrix& left, const Matrix& right);
+    friend Matrix operator *(const Matrix& left, const Matrix& right);
+    friend std::ostream& operator <<(std::ostream& s, const Matrix& m);
 
 };
